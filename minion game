@@ -3,7 +3,7 @@ def minion_game(string):
     con,vow=0,0
     for i in range(s):
         if string[i] in 'AEIOU':
-            vow=vow*(s-i)
+            vow=vow+(s-i)
         else:
             con=con+(s-i)
     if con>vow:
